@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Flying Pages Configuration</title>
+        <title lang="en-EN">Flying Pages Configuration</title>
+		<title lang="nl-NL">Flying Pages Configuratie</title>
+		<title lang="de-DE">Flying Pages Konfiguration</title>
+
+        <input-field type="int">
+			<name>delay</name>
+			<label>Prefetch delay (in seconds)</label>
+			<defaultValue>0</defaultValue>
+			<helpText>Start prefetching after a delay (in seconds). Will be started when the browser becomes idle, using requestIdleCallback. Default to 0.</helpText>
+		</input-field>
+		
+		<input-field type="text">
+			<name>ignoreKeywords</name>
+			<label>Ignore keywords</label>
+			<defaultValue></defaultValue>
+			<placeholder>'/cart', '#'</placeholder>
+			<helpText>An array of keywords to ignore from prefetching. Example: '/logout','/cart','about.html','sample.png','#'</helpText>
+		</input-field>
+		
+		<input-field type="int">
+			<name>maxRPS</name>
+			<label>Maximum requests (per second)</label>
+			<defaultValue>3</defaultValue>
+			<helpText>Maximum requests per second the queue should process. Set to 0 to process all requests immediately (without queue). Default to 3.</helpText>
+		</input-field>
+		
+		<input-field type="int">
+			<name>hoverDelay</name>
+			<label>Hover delay (in milliseconds)</label>
+			<defaultValue>50</defaultValue>
+			<helpText>Delay in prefetching links on mouse hover (in milliseconds). Default 50.</helpText>
+		</input-field>
+    </card>
+</config>

@@ -1,0 +1,19 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% set FP_delay = config('SBYPFlyingPages.config.delay') %}
+{% set FP_ignoreKeywords = config('SBYPFlyingPages.config.ignoreKeywords') %}
+{% set FP_maxRPS = config('SBYPFlyingPages.config.maxRPS') %}
+{% set FP_hoverDelay = config('SBYPFlyingPages.config.hoverDelay') %}
+
+{% block base_body_script %}
+    {{ parent() }}
+	<script>
+	  window.FPConfig = {
+		delay: {{ FP_delay }},
+		ignoreKeywords: [{{ FP_ignoreKeywords }}],
+		maxRPS: {{ FP_maxRPS }},
+		hoverDelay: {{ FP_hoverDelay }},
+	  };
+	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flying-pages/2.1.2/flying-pages.min.js" integrity="sha512-lA28GkW6e5Z+VJ8LtZDInQBfzcxCG+y045ykklhLArmd1DyMHQKA5e1Vcx7iMAx3AnQ8AakR5AIwBlFgWcTHqA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+{% endblock %}

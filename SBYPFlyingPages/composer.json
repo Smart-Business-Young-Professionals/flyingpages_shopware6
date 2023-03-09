@@ -1,0 +1,42 @@
+{
+  "name": "sbyp/flyingpages",
+  "description": "SBYP Flying Pages",
+  "version": "v1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+	  {
+		  "name": "Smart Business Young Profesionals",
+          "homepage": "https://www.sbyp.nl"
+	  }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SBYP\\FlyingPages\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "SBYP\\FlyingPages\\SBYPFlyingPages",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "label": {
+      "de-DE": "FlyingPages - Prefetch Links",
+      "en-GB": "FlyingPages - Prefetch Links",
+	  "nl-NL": "FlyingPages - Prefetch Links"
+    },
+	"description": {
+      "de-DE": "Flying Pages ruft Seiten vorab ab, bevor der Benutzer auf Links klickt, sodass sie sofort geladen werden. Das Plug-in erkennt Seiten im Ansichtsfenster und beim Überfahren mit der Maus und beginnt, sie vorab abzurufen.",
+      "en-GB": "Flying Pages prefetch pages before the user click on links, making them load instantly. The plugin detects pages in the viewport and on mouse hover and starts prefetching them.",
+	  "nl-NL": "Flying Pages haalt pagina's vooraf op voordat de gebruiker op links klikt, waardoor ze onmiddellijk worden geladen. De plug-in detecteert pagina's in de viewport en bij het bewegen van de muis en begint ze vooraf op te halen."
+	},
+	"manufacturerLink": {
+		"de-DE": "https://www.sbyp.nl",
+		"en-GB": "https://www.sbyp.nl",
+		"nl-NL": "https://www.sbyp.nl"
+	},
+	"supportLink": {
+		"de-DE": "https://www.sbyp.nl/contact/",
+		"en-GB": "https://www.sbyp.nl/contact/",
+		"nl-NL": "https://www.sbyp.nl/contact/"
+	}
+  }
+}
