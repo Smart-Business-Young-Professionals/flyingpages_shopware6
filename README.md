@@ -1,6 +1,6 @@
 # Flying Pages for Shopware 6
 
-This Shopware 6 plugin integrates Flying Pages (https://github.com/gijo-varghese/flying-pages) into your Shopware store.
+This Shopware 6 plugin integrates Flying Pages (https://github.com/gijo-varghese/flying-pages) into your Shopware store. All credits for the javascript library used in this plugin go to Gijo Varghese (https://github.com/gijo-varghese).
 
 Flying Pages prefetches internal pages before the user clicks on a link, making them load faster.
 It does this by checking which links are in the viewport or on what link a user is hovering.
