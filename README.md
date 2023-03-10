@@ -13,5 +13,7 @@ Within the plugin configuration you have the following options:
 
 ![Plugin configuration](https://i.ibb.co/tzNgyQ3/plugin-configuration.jpg)
 
+![Prefetching demo](https://i.ibb.co/VWD7LKQ/flying-pages-prefetching-test.gif)
+
 We have developed this plugin for Shopware v6.4.20.0. If you would experience any issues with your Shopware version, please let us know.
 Feedback is always welcome.
