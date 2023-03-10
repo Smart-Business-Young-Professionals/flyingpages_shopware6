@@ -11,8 +11,10 @@ Within the plugin configuration you have the following options:
 - Maximum requests (per second): Maximum requests per second the queue should process. Set to 0 to process all requests immediately (without queue). Default to 3.
 - Hover delay (in milliseconds): Delay in prefetching links on mouse hover (in milliseconds). Default 50.
 
+## Shopware 6 dashboard configuration
 ![Plugin configuration](https://i.ibb.co/tzNgyQ3/plugin-configuration.jpg)
 
+## Prefetching demo
 ![Prefetching demo](https://i.ibb.co/VWD7LKQ/flying-pages-prefetching-test.gif)
 
 We have developed this plugin for Shopware v6.4.20.0. If you would experience any issues with your Shopware version, please let us know.
